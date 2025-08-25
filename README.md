@@ -153,7 +153,24 @@ The dataset was annotated with **11 distinct classes**, including both anatomica
 - **Data Imbalance:** Some classes (e.g., *Choroid Plexus*) dominate the dataset, while rare structures (e.g., *Infundibular Recess*) limit performance.  
 - **Video-based split advantage:** Ensures realistic evaluation compared to frame-level random splits.  
 - **Model strengths:** Handles tool detection effectively (e.g., *Grasper*).  
-- **Limitations:** Struggles with overlapping anatomical structures and low-contrast regions.  
+- **Limitations:** Struggles with overlapping anatomical structures and low-contrast regions.
+
+---
+
+## Installation  
+
+```bash
+# Clone repository
+git clone https://github.com/pradyumnakr/video-instance-segmentation.git
+cd video-instance-segmentation
+```
+
+# Install dependencies
+```bash
+pip install -r requirements.txt
+```
+
+
 
 
 
