@@ -134,9 +134,10 @@ The dataset was annotated with **11 distinct classes**, including both anatomica
 - **Visualization:** Predicted masks align well with actual labels in most cases.  
 
 <p align="center">
-  <img src="images/actual.png" alt="Actual Results" width="45%"/>
-  <img src="images/predicted.png" alt="Predicted Results" width="45%"/>
+  <img src="images/Actual.png" alt="Actual Results" width="45%"/>
+  <img src="images/Predicted.png" alt="Predicted Results" width="45%"/>
 </p>  
+
 
 
 
