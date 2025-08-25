@@ -159,15 +159,31 @@ The dataset was annotated with **11 distinct classes**, including both anatomica
 
 ## Installation  
 
+
+### Clone repository
 ```bash
-# Clone repository
 git clone https://github.com/pradyumnakr/ETV-Instance-Segmentation.git
 cd ETV-Instance-Segmentation
 ```
 
+### Install dependencies
 ```bash
-# Install dependencies
 pip install -r requirements.txt
+```
+
+### Train YOLO11n-seg model
+```bash
+yolo task=segment mode=train model=yolo11n-seg data=config.yaml epochs=10 imgsz=640
+```
+
+### Run evaluation on test set
+```bash
+yolo task=segment mode=val model=runs/train/weights/best.pt data=config.yaml
+```
+
+### Run predictions on new videos
+```bash
+yolo task=segment mode=predict model=runs/train/weights/best.pt source=your_video.mp4
 ```
 
 
