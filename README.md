@@ -77,7 +77,9 @@ The dataset was annotated with **11 distinct classes**, including both anatomica
   - *Cerebral Aqueduct* → `2`  
   - ...and so on.  
 
-  This ensured that every polygon annotation was aligned with the correct class for training the segmentation model.  
+  This ensured that every polygon annotation was aligned with the correct class for training the segmentation model.
+
+  ![Confusion Matrix (Normalized)](images/confusion_matrix_normalized.png)  
 
 - **Data split:**  
   To prevent data leakage, a strict **video-based split** was enforced. Entire videos were reserved for testing while the rest were used for training. The following videos were held out exclusively for the test set:  
@@ -91,6 +93,7 @@ The dataset was annotated with **11 distinct classes**, including both anatomica
   - **Infundibular Recess** → 138 instances  
 
   This imbalance was a known challenge during training and directly influenced performance across classes.  
+
 
 
 
