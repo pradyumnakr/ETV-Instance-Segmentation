@@ -125,6 +125,21 @@ The dataset was annotated with **11 distinct classes**, including both anatomica
 
 ![Precision-Recall Curve](images/MaskPR_curve.png)  
 
+---
+
+### Qualitative Results  
+
+- **Training loss curves:** Show steady convergence over 10 epochs.  
+- **Precision-Recall curves:** Indicate robust detection across majority classes.  
+- **Visualization:** Predicted masks align well with actual labels in most cases.  
+
+<p align="center">
+  <img src="images/actual.png" alt="Actual Results" width="45%"/>
+  <img src="images/predicted.png" alt="Predicted Results" width="45%"/>
+</p>  
+
+
+
 
 
 
