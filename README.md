@@ -92,7 +92,27 @@ The dataset was annotated with **11 distinct classes**, including both anatomica
   - **Choroid Plexus** → 6,562 instances  
   - **Infundibular Recess** → 138 instances  
 
-  This imbalance was a known challenge during training and directly influenced performance across classes.  
+  This imbalance was a known challenge during training and directly influenced performance across classes.
+
+  ---
+
+## Model Selection  
+
+- **Chosen model:** YOLO11n-seg (YOLOv11 segmentation variant)  
+- **Reason:** Optimized for **lightweight deployment** with competitive accuracy.  
+
+---
+
+## Training Configuration  
+
+- **Epochs:** 10  
+- **Optimization goal:** Balanced speed and accuracy.  
+- **Loss functions:** YOLO standard (objectness + classification + mask segmentation).  
+- **Hardware:** Designed to run efficiently on GPU-backed cloud environments (e.g., AWS SageMaker).  
+
+![Training Results](images/results.png)  
+
+
 
 
 
