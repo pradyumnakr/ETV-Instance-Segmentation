@@ -63,6 +63,36 @@ The dataset was annotated with **11 distinct classes**, including both anatomica
 10. Other Stoma  
 11. Third Ventricular Stoma  
 
+---
+
+## Preprocessing  
+
+- **Video-to-frame extraction:**  
+  Surgical videos were decomposed into frames based on the **data_fps** field available in each video’s JSON metadata. This ensured that frames were extracted consistently at the intended frame rate, which varied across videos (e.g., **10 FPS or 15 FPS**, depending on the source video). Extracted frames were then annotated with polygon masks for each anatomical structure or surgical tool.  
+
+- **Annotation format:**  
+  Annotations were provided in **JSON format**, where each object instance was defined by polygon coordinates along with associated metadata. To extract anatomical structures and tools, the pipeline parsed the **name** or **value** fields in the JSON and mapped them to a **class ID**. For example:  
+  - *Basilar Artery* → `0`  
+  - *Cautery* → `1`  
+  - *Cerebral Aqueduct* → `2`  
+  - ...and so on.  
+
+  This ensured that every polygon annotation was aligned with the correct class for training the segmentation model.  
+
+- **Data split:**  
+  To prevent data leakage, a strict **video-based split** was enforced. Entire videos were reserved for testing while the rest were used for training. The following videos were held out exclusively for the test set:  
+  - `DL04_01_TI0YGO`  
+  - `DL05_03_0MYO92`  
+  - `DL01_03_0LDWR5`  
+
+- **Class distribution:**  
+  The dataset exhibited significant **imbalance across the 11 classes**. For example:  
+  - **Choroid Plexus** → 6,562 instances  
+  - **Infundibular Recess** → 138 instances  
+
+  This imbalance was a known challenge during training and directly influenced performance across classes.  
+
+
 
 
 
