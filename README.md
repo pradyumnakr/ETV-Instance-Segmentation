@@ -146,6 +146,17 @@ The dataset was annotated with **11 distinct classes**, including both anatomica
   </tr>
 </table>
 
+---
+
+## Analysis  
+
+- **Data Imbalance:** Some classes (e.g., *Choroid Plexus*) dominate the dataset, while rare structures (e.g., *Infundibular Recess*) limit performance.  
+- **Video-based split advantage:** Ensures realistic evaluation compared to frame-level random splits.  
+- **Model strengths:** Handles tool detection effectively (e.g., *Grasper*).  
+- **Limitations:** Struggles with overlapping anatomical structures and low-contrast regions.  
+
+
+
 
 
 
