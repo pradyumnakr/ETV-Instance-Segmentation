@@ -186,6 +186,34 @@ yolo task=segment mode=val model=runs/train/weights/best.pt data=config.yaml
 yolo task=segment mode=predict model=runs/train/weights/best.pt source=your_video.mp4
 ```
 
+---
+
+## Future Work  
+
+- **Longer training:** Train with more epochs for improved convergence.  
+- **Class rebalancing techniques:** Apply oversampling, focal loss, or synthetic data generation to handle class imbalance.  
+- **Temporal models:** Explore ConvLSTM, 3D CNNs, or Transformers to incorporate video dynamics.  
+- **Deployment:** Develop a real-time surgical assistance tool with optimized inference speed.  
+- **Explainability:** Introduce visualization of model uncertainty to enhance surgeon trust.  
+
+---
+
+## Documentation Summary  
+
+This project was carefully documented over two phases:  
+
+1. **Dataset & Preprocessing Documentation:** Detailed mapping of video splits, annotation schema, and dataset statistics.  
+2. **Model Training & Results Documentation:** Training configurations, loss curve tracking, mAP analysis, and class-level performance review.  
+
+---
+
+## Acknowledgments  
+
+- Virginia Tech, Department of Computer Science  
+- **Dr. Sara Hooshangi**, Director of Computer Science M.Eng. Program, for her supervision and guidance throughout the project  
+- **Dr. Donoho**, Children’s National Hospital, for his mentorship  
+
+
 
 
 
