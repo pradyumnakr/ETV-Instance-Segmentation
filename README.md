@@ -127,16 +127,26 @@ The dataset was annotated with **11 distinct classes**, including both anatomica
 
 ---
 
+---
+
 ### Qualitative Results  
 
 - **Training loss curves:** Show steady convergence over 10 epochs.  
 - **Precision-Recall curves:** Indicate robust detection across majority classes.  
 - **Visualization:** Predicted masks align well with actual labels in most cases.  
 
-<p align="center">
-  <img src="images/Actual.png" alt="Actual Results" width="45%"/>
-  <img src="images/Predicted.png" alt="Predicted Results" width="45%"/>
-</p>  
+<table>
+  <tr>
+    <th style="text-align:center">Actual Labels</th>
+    <th style="text-align:center">Predicted Labels</th>
+  </tr>
+  <tr>
+    <td align="center"><img src="images/Actual.png" alt="Actual Results" width="400"/></td>
+    <td align="center"><img src="images/Predicted.png" alt="Predicted Results" width="400"/></td>
+  </tr>
+</table>
+
+
 
 
 
