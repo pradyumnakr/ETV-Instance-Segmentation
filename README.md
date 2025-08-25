@@ -33,4 +33,33 @@ The goals of this project include:
 
 ### 4. Documentation & Reproducibility  
 - Provide detailed documentation to allow others to replicate or extend the work.  
-- Highlight challenges and future improvements.  
+- Highlight challenges and future improvements.
+
+---
+
+## Source & Composition  
+
+- **Total videos:** 44  
+- **Total frames analyzed:** 12,941  
+- **Training images:** 9,085  
+- **Test images:** 3,856  
+
+---
+
+## Classes (Polygon Types)  
+
+The dataset was annotated with **11 distinct classes**, including both anatomical structures and surgical tools:  
+
+1. Basilar Artery  
+2. Cautery  
+3. Cerebral Aqueduct  
+4. Choroid Plexus  
+5. Foramen of Monro  
+6. Grasper  
+7. Infundibular Recess  
+8. Mamillary Bodies  
+9. Neuroballon  
+10. Other Stoma  
+11. Third Ventricular Stoma  
+
+
