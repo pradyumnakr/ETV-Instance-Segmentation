@@ -161,14 +161,15 @@ The dataset was annotated with **11 distinct classes**, including both anatomica
 
 ```bash
 # Clone repository
-git clone https://github.com/pradyumnakr/video-instance-segmentation.git
-cd video-instance-segmentation
+git clone https://github.com/pradyumnakr/ETV-Instance-Segmentation.git
+cd ETV-Instance-Segmentation
 ```
 
-# Install dependencies
 ```bash
+# Install dependencies
 pip install -r requirements.txt
 ```
+
 
 
 
