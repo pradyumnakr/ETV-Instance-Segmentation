@@ -44,6 +44,7 @@ The goals of this project include:
 - **Training images:** 9,085  
 - **Test images:** 3,856  
 
+![Class Distribution](images/labels.png)
 ---
 
 ## Classes (Polygon Types)  
@@ -61,5 +62,6 @@ The dataset was annotated with **11 distinct classes**, including both anatomica
 9. Neuroballon  
 10. Other Stoma  
 11. Third Ventricular Stoma  
+
 
 
