@@ -112,6 +112,20 @@ The dataset was annotated with **11 distinct classes**, including both anatomica
 
 ![Training Results](images/results.png)  
 
+---
+
+## Results  
+
+### Quantitative Results  
+
+- **mAP@0.5:** 0.59  
+- **Best-performing classes:** Other Stoma and Neuroballon  
+- **Moderate results:** Choroid Plexus and Basilar Artery  
+- **Underperformance:** Rare classes due to data imbalance  
+
+![Precision-Recall Curve](images/MaskPR_curve.png)  
+
+
 
 
 
